@@ -15,7 +15,7 @@ ENV LANGUAGE=ja_JP:ja
 ENV LC_ALL=ja_JP.UTF-8
 
 # phpPgAdmin を取得
-ENV PHP_PGADMIN_VERSION=7.14.1
+ENV PHP_PGADMIN_VERSION=7-14-0
 
 RUN curl -L https://github.com/phppgadmin/phppgadmin/archive/refs/tags/REL_${PHP_PGADMIN_VERSION}.tar.gz \
     -o /tmp/phpPgAdmin.tar.gz \
