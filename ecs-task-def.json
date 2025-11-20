@@ -1,0 +1,29 @@
+{
+  "family": "hoge-dev01-task-definition-phppgadmin",
+  "networkMode": "awsvpc",
+  "requiresCompatibilities": ["FARGATE"],
+  "cpu": "256",
+  "memory": "512",
+  "executionRoleArn": "arn:aws:iam::828411218453:role/ecsTaskExecutionRole",
+  "taskRoleArn": "arn:aws:iam::828411218453:role/ecsTaskRole",
+  "containerDefinitions": [
+    {
+      "name": "phppgadmin",
+      "image": "phppgadmin-ja:latest",
+      "portMappings": [
+        {
+          "containerPort": 80,
+          "protocol": "tcp"
+        }
+      ],
+      "environment": [
+        {
+          "name": "PG_HOST",
+          "value": "hogehoge"
+        }
+      ],
+      "essential": true
+    }
+  ]
+}
+
