@@ -4,8 +4,8 @@
   "requiresCompatibilities": ["FARGATE"],
   "cpu": "256",
   "memory": "512",
-  "executionRoleArn": "arn:aws:iam::828411218453:role/ecsTaskExecutionRole",
-  "taskRoleArn": "arn:aws:iam::828411218453:role/ecsTaskRole",
+  "executionRoleArn": "arn:aws:iam::828411218453:role/hoge-dev01-role-ecs-task-execution-phppgadmin",
+  "taskRoleArn": "arn:aws:iam::828411218453:role/hoge-dev01-role-ecs-task-phppgadmin",
   "containerDefinitions": [
     {
       "name": "phppgadmin",
