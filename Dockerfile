@@ -20,11 +20,11 @@ ENV PHP_PGADMIN_VERSION=7-14-0
 # ★GitHub 403/404 対策：User-Agent + -f（fail on error）必須
 RUN set -eux; \
     curl -Lf \
-      -H "User-Agent: phppgadmin-downloader" \
-      "https://github.com/phppgadmin/phppgadmin/archive/refs/tags/REL_${PHP_PGADMIN_VERSION}.tar.gz" \
+      "https://codeload.github.com/phppgadmin/phppgadmin/tar.gz/refs/tags/REL_${PHP_PGADMIN_VERSION}" \
       -o /tmp/phpPgAdmin.tar.gz; \
     tar -xzf /tmp/phpPgAdmin.tar.gz -C /var/www/html --strip-components=1; \
     rm /tmp/phpPgAdmin.tar.gz
+
 
 # 日本語ファイル
 COPY japanese.php /var/www/html/lang/japanese.php
