@@ -19,7 +19,7 @@
       "environment": [
         {
           "name": "PG_HOST",
-          "value": "hogehoge"
+          "value": "hoge-dev01-cluster-rds-aurora.cluster-cejpgcjvcccv.ap-northeast-1.rds.amazonaws.com"
         }
       ],
       "essential": true
