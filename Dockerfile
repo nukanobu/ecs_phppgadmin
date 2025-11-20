@@ -20,7 +20,7 @@ ENV PHP_PGADMIN_VERSION=7-14-0
 # ★GitHub 403/404 対策：User-Agent + -f（fail on error）必須
 RUN set -eux; \
     curl -Lf \
-      "https://codeload.github.com/phppgadmin/phppgadmin/tar.gz/refs/tags/REL_${PHP_PGADMIN_VERSION}" \
+      "https://github.com/phppgadmin/phppgadmin/releases/download/REL_7-13-0/phpPgAdmin-7.13.0.tar.gz" \
       -o /tmp/phpPgAdmin.tar.gz; \
     tar -xzf /tmp/phpPgAdmin.tar.gz -C /var/www/html --strip-components=1; \
     rm /tmp/phpPgAdmin.tar.gz
