@@ -15,8 +15,8 @@ jobs:
     env:
       AWS_REGION: ap-northeast-1
       ECR_REPOSITORY: phppgadmin-ja
-      ECS_CLUSTER: my-ecs-cluster
-      ECS_SERVICE: phppgadmin-service
+      ECS_CLUSTER: hoge-dev01-ecs-cluster
+      ECS_SERVICE: hoge-dev01-ecs-service-phppgadmin
       TASK_DEF_FILE: ecs-task-def.json
 
     steps:
