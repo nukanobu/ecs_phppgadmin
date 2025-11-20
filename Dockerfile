@@ -30,7 +30,7 @@ RUN set -eux; \
 COPY japanese.php /var/www/html/lang/japanese.php
 
 # 設定ファイル
-COPY config.inc.php /var/www/html/conf/config.inc.php
+COPY config.inc.php-dist /var/www/html/conf/config.inc.php
 
 RUN chown -R www-data:www-data /var/www/html
 
